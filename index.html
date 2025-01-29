@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Torneos Deportivos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Registro de Torneos Deportivos</h1>
+        <form id="registrationForm">
+            <table>
+                <tr>
+                    <th>Institución</th>
+                    <th>Deporte</th>
+                    <th>Nivel</th>
+                    <th>Programa/Licenciatura</th>
+                    <th>Apellido Paterno</th>
+                    <th>Apellido Materno</th>
+                    <th>Nombre</th>
+                    <th>CURP</th>
+                    <th>CURP (RENAPO)</th>
+                    <th>FUA (Avance Académico)</th>
+                    <th>Credencial de la Escuela</th>
+                </tr>
+                <tr>
+                    <td><input type="text" name="institucion" required></td>
+                    <td><input type="text" name="deporte" required></td>
+                    <td>
+                        <select name="nivel" required>
+                            <option value="licenciatura">Licenciatura</option>
+                            <option value="posgrado">Posgrado</option>
+                        </select>
+                    </td>
+                    <td><input type="text" name="programa" required></td>
+                    <td><input type="text" name="apellidoPaterno" required></td>
+                    <td><input type="text" name="apellidoMaterno" required></td>
+                    <td><input type="text" name="nombre" required></td>
+                    <td><input type="text" name="curp" required></td>
+                    <td><input type="text" name="curpRenapo" required></td>
+                    <td><input type="text" name="fua" required></td>
+                    <td><input type="text" name="credencial" required></td>
+                </tr>
+            </table>
+            <button type="submit">Registrar</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
